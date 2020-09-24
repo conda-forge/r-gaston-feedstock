@@ -1,4 +1,4 @@
-{% set version = '1.5.6' %}
+{% set version = "1.5.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gaston_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gaston/gaston_{{ version }}.tar.gz
-  sha256: 2f9b8f8d16c20cfa3426b57aabf1d63a9e9ab6e4689f0fec1e8ea6251d8ea6af
+  sha256: 3188dc7fb34c30d43f8601432c805bfb6603cf8c891f2e767ebb114b6f23e993
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -52,12 +52,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=gaston
   license: GPL-3.0-only
-  summary: Manipulation of genetic data (SNPs). Computation of GRM and dominance matrix, LD,
-    heritability with efficient algorithms for linear mixed model (AIREML). Dandine
-    et al <doi:10.1159/000488519>.
+  summary: Manipulation of genetic data (SNPs). Computation of GRM and dominance matrix, LD, heritability with efficient algorithms for linear mixed model (AIREML). Dandine et al <doi:10.1159/000488519>.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
