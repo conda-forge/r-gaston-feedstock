@@ -1,4 +1,4 @@
-{% set version = "1.5.7" %}
+{% set version = "1.5.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/gaston_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/gaston/gaston_{{ version }}.tar.gz
-  sha256: 3188dc7fb34c30d43f8601432c805bfb6603cf8c891f2e767ebb114b6f23e993
+  sha256: 8c09f2cc721a03f7ffdf2cef351e0ffd9561c5c1eb75074fa373bf81353b63df
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
