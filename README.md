@@ -1,11 +1,22 @@
+About r-gaston-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gaston-feedstock/blob/main/LICENSE.txt)
+
 About r-gaston
-==============
+--------------
 
 Home: https://CRAN.R-project.org/package=gaston
 
 Package license: GPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-gaston-feedstock/blob/main/LICENSE.txt)
+Summary: Manipulation of genetic data (SNPs). Computation of GRM and dominance matrix, LD, heritability with efficient algorithms for linear mixed model (AIREML). Dandine et al <doi:10.1159/000488519>.
+About r-gaston
+--------------
+
+Home: https://CRAN.R-project.org/package=gaston
+
+Package license: GPL-3.0-only
 
 Summary: Manipulation of genetic data (SNPs). Computation of GRM and dominance matrix, LD, heritability with efficient algorithms for linear mixed model (AIREML). Dandine et al <doi:10.1159/000488519>.
 
@@ -27,13 +38,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10296&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-gaston-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10296&branchName=main">
@@ -41,10 +45,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10296&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-gaston-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-gaston-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -52,6 +56,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10296&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-gaston-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10296&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-gaston-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
