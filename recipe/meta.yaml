@@ -1,6 +1,5 @@
 {% set version = "1.6" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-gaston
@@ -13,8 +12,7 @@ source:
   sha256: a4279c07054766356019858a8b9d06a99a094d84e362fd8594342bdd04f7d2ce
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +20,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
@@ -38,7 +38,6 @@ requirements:
     - zlib
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-rcpp
     - r-rcppeigen
     - r-rcppparallel
